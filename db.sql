@@ -1,0 +1,8 @@
+CREATE TABLE `dns_records` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(255) NOT NULL,
+  `type` VARCHAR(10) NOT NULL,
+  `content` TEXT NOT NULL,
+  `ttl` INT NOT NULL DEFAULT 3600,
+  `prio` INT DEFAULT NULL
+);
